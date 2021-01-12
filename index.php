@@ -8,12 +8,12 @@ use setasign\Fpdi\Fpdi;
 $pdf = new Fpdi();
 
 $pdf->AddPage();
-$pdf->setSourceFile('Prilog.pdf');
+$pdf->setSourceFile(SOURCE_FILE);
 $tplIdx = $pdf->importPage(1);
-$pdf->useTemplate($tplIdx, 0, 0, null, null, true);
+$pdf->useTemplate($tplIdx);
 
 $pdf->Image(
-    'signature.png',
+    SIGNATURE,
     SIGNATURE_POSITION_X,
     SIGNATURE_POSITION_Y,
     SIGNATURE_WIDTH,
