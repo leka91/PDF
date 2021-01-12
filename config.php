@@ -1,5 +1,8 @@
 <?php
 
+define('SOURCE_FILE', glob('./*.pdf')[0]);
+
+define('SIGNATURE', './signature.png');
 define('SIGNATURE_POSITION_X', 148);
 define('SIGNATURE_POSITION_Y', 220);
 define('SIGNATURE_WIDTH', 36);
