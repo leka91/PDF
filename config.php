@@ -1,10 +1,10 @@
 <?php
 
-define('SOURCE_FILE', glob('./*.pdf')[0]);
+define('SOURCE_FILE', glob('bank/*.*')[0]);
 
 define('SIGNATURE', glob('./*.png')[0]);
 define('SIGNATURE_POSITION_X', 148);
-define('SIGNATURE_POSITION_Y', 220);
+define('SIGNATURE_POSITION_Y', 255);
 define('SIGNATURE_WIDTH', 36);
 define('SIGNATURE_HEIGHT', 15);
 
